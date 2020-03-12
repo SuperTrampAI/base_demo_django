@@ -1,0 +1,17 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+INFO:django.utils.autoreload:E:\PycharmProjects\base_demo_django\base_app2\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+INFO:django.utils.autoreload:E:\PycharmProjects\base_demo_django\base_app2\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+DEBUG:asyncio:Using proactor: IocpProactor

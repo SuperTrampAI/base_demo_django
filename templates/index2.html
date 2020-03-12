@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base_app2 前端渲染</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <h1>部门信息</h1>
+	<hr>
+	<table>
+	    <tr>
+            <th>部门编号</th>
+            <th>部门名称</th>
+            <th>所在地</th>
+        </tr>
+        {% for l in li %}
+        <tr>
+            <td>{{ l.no }}</td>
+            <td>{{ l.name }}</td>
+            <td>{{ l.location }}</td>
+        <tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

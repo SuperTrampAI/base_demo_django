@@ -1,0 +1,94 @@
+2020-03-12 15:14:20 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:16:12 autoreload.trigger_reload: E:\PycharmProjects\base_demo_django\base_demo_django\settings.py changed, reloading.
+2020-03-12 15:16:13 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:16:24 basehttp.log_message: "GET /base_app2/index2 HTTP/1.1" 200 799
+2020-03-12 15:16:29 basehttp.log_message: "GET /base_app2/index2 HTTP/1.1" 200 799
+2020-03-12 15:16:33 basehttp.log_message: "GET /base_app2/index2 HTTP/1.1" 200 799
+2020-03-12 15:24:26 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:24:31 log.log_response: Internal Server Error: /base_app2/index2
+Traceback (most recent call last):
+  File "F:\software\Python38\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\software\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "F:\software\Python38\lib\site-packages\debug_toolbar\middleware.py", line 99, in __call__
+    bits[-2] += toolbar.render_toolbar()
+  File "F:\software\Python38\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "F:\software\Python38\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\software\Python38\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\software\Python38\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "F:\software\Python38\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "F:\software\Python38\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "F:\software\Python38\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "F:\software\Python38\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "F:\software\Python38\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "F:\software\Python38\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "F:\software\Python38\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\software\Python38\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+2020-03-12 15:24:31 basehttp.log_message: "GET /base_app2/index2 HTTP/1.1" 500 132885
+2020-03-12 15:26:51 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:26:53 basehttp.log_message: "GET /base_app2/index2 HTTP/1.1" 200 9786
+2020-03-12 15:26:53 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14984
+2020-03-12 15:26:53 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+2020-03-12 15:26:53 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 12791
+2020-03-12 15:26:53 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+2020-03-12 15:26:59 basehttp.log_message: "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+2020-03-12 15:34:30 basehttp.log_message: "GET /static/debug_toolbar/img/close.png HTTP/1.1" 200 498
+2020-03-12 15:34:30 basehttp.log_message: "GET /static/debug_toolbar/img/indicator.png HTTP/1.1" 200 436
+2020-03-12 15:34:30 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=VersionsPanel HTTP/1.1" 200 556
+2020-03-12 15:34:33 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=SettingsPanel HTTP/1.1" 200 26197
+2020-03-12 15:34:36 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=RequestPanel HTTP/1.1" 200 1337
+2020-03-12 15:34:41 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=SQLPanel HTTP/1.1" 200 23890
+2020-03-12 15:34:48 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=StaticFilesPanel HTTP/1.1" 200 29826
+2020-03-12 15:34:50 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=TemplatesPanel HTTP/1.1" 200 5250
+2020-03-12 15:34:54 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=CachePanel HTTP/1.1" 200 811
+2020-03-12 15:34:56 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=SignalsPanel HTTP/1.1" 200 1619
+2020-03-12 15:34:57 basehttp.log_message: "GET /__debug__/render_panel/?store_id=fcdcbdcbcbae483fa358b73f1f4357d2&panel_id=LoggingPanel HTTP/1.1" 200 501
+2020-03-12 15:38:14 basehttp.log_message: "GET /vote/echarts_teacher/ HTTP/1.1" 200 10475
+2020-03-12 15:38:14 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-03-12 15:38:14 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-03-12 15:38:14 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-03-12 15:38:14 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-03-12 15:38:15 basehttp.log_message: "GET /vote/teachers_data/ HTTP/1.1" 200 132
+2020-03-12 15:41:11 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:41:41 log.log_response: Not Found: /echarts_teacher
+2020-03-12 15:41:41 basehttp.log_message: "GET /echarts_teacher HTTP/1.1" 404 11628
+2020-03-12 15:41:41 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-03-12 15:41:41 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-03-12 15:41:41 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-03-12 15:41:41 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-03-12 15:41:50 basehttp.log_message: "GET /vote/echarts_teacher/ HTTP/1.1" 200 10474
+2020-03-12 15:41:51 basehttp.log_message: "GET /vote/teachers_data/ HTTP/1.1" 200 132
+2020-03-12 15:42:55 log.log_response: Not Found: /export/xls/
+2020-03-12 15:42:55 basehttp.log_message: "GET /export/xls/ HTTP/1.1" 404 11616
+2020-03-12 15:44:05 autoreload.trigger_reload: E:\PycharmProjects\base_demo_django\vote\urls.py changed, reloading.
+2020-03-12 15:44:05 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:44:08 log.log_response: Not Found: /export/xls/
+2020-03-12 15:44:08 basehttp.log_message: "GET /export/xls/ HTTP/1.1" 404 11616
+2020-03-12 15:44:08 basehttp.log_message: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+2020-03-12 15:44:08 basehttp.log_message: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+2020-03-12 15:44:08 basehttp.log_message: "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+2020-03-12 15:44:08 basehttp.log_message: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+2020-03-12 15:44:14 log.log_response: Not Found: /export/xls/
+2020-03-12 15:44:14 basehttp.log_message: "GET /export/xls/ HTTP/1.1" 404 11616
+2020-03-12 15:45:49 basehttp.log_message: "GET /vote/export/xls/ HTTP/1.1" 200 5632
+2020-03-12 15:46:06 autoreload.run_with_reloader: Watching for file changes with StatReloader
+2020-03-12 15:46:17 basehttp.log_message: "GET /vote/export/xls/ HTTP/1.1" 200 5632
